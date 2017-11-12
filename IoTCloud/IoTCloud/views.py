@@ -27,7 +27,7 @@ def contact():
     )
 
 @app.route('/iotcloud')
-def contact():
+def iotcloud():
     """Renders test page"""
     return render_template(
         'iotcloud.html',
