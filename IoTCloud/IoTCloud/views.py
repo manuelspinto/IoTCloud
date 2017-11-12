@@ -26,6 +26,16 @@ def contact():
         message='Your contact page.'
     )
 
+@app.route('/iotcloud')
+def contact():
+    """Renders test page"""
+    return render_template(
+        'iotcloud.html',
+        title='IoTCloud',
+        year=datetime.now().year,
+        message='Test page'
+    )
+
 @app.route('/about')
 def about():
     """Renders the about page."""
