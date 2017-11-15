@@ -31,6 +31,7 @@
     <Compile Include="runserver.py" />
     <Compile Include="IoTCloud\__init__.py" />
     <Compile Include="IoTCloud\views.py" />
+    <Compile Include="wsgi.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IoTCloud\" />
