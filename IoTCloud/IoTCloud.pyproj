@@ -42,7 +42,10 @@
     <Folder Include="IoTCloud\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IoTCloud\templates\admin.html" />
     <Content Include="IoTCloud\templates\iotcloud.html" />
+    <Content Include="IoTCloud\templates\login.html" />
+    <Content Include="IoTCloud\templates\register.html" />
     <Content Include="requirements.txt" />
     <Content Include="IoTCloud\static\content\bootstrap.css" />
     <Content Include="IoTCloud\static\content\bootstrap.min.css" />
