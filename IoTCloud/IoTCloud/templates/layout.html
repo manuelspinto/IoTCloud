@@ -27,23 +27,32 @@
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    {% if current_user.is_authenticated %}
                     <li>
-                        {% if current_user.is_authenticated %}
-                        Hi {{ current_user.name }}!
-                        {% endif %}
+                       <a> Hi {{ current_user.username }}! </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('logout') }}">
+                            <span class="glyphicon glyphicon-log-out"></span>
+                            Logout
+                        </a>
+                    </li>
+                    {% endif %}
 
-                        {% if current_user.is_authenticated %}
-                        <span class="glyphicon glyphicon-log-out"></span>
-                        Logout
-                        {% endif %}
-
-                        {% if not current_user.is_authenticated %}
+                    {% if not current_user.is_authenticated %}
+                    <li>
                         <a href="{{ url_for('login') }}">
                             <span class="glyphicon glyphicon-log-in"></span>
                             Login
                         </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('register') }}">
+                            <span class="glyphicon glyphicon glyphicon-check"></span>
+                            Register
+                        </a>
                         {% endif %}
-                        
                     </li>
                 </ul>
             </div>
