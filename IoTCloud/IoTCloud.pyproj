@@ -28,6 +28,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="IoTCloud\dbm\dbdeployer.py" />
+    <Compile Include="IoTCloud\dbm\rdb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\dbm\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\dbm\models.py" />
     <Compile Include="runserver.py" />
     <Compile Include="IoTCloud\__init__.py" />
     <Compile Include="IoTCloud\views.py" />
@@ -35,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IoTCloud\" />
+    <Folder Include="IoTCloud\dbm\" />
     <Folder Include="IoTCloud\static\" />
     <Folder Include="IoTCloud\static\content\" />
     <Folder Include="IoTCloud\static\fonts\" />

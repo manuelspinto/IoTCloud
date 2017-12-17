@@ -4,9 +4,11 @@ Routes and views for the flask application.
 
 from datetime import datetime
 from flask import render_template
-from flask_login import login_required, login_user, logout_user 
+from flask_login import login_required, login_user, logout_user , login_manager
 from flask_wtf import FlaskForm
 from IoTCloud import app
+from IoTCloud.dbm.dbdeployer import Deploy
+from flask import request
 
 @app.route('/')
 @app.route('/home')
@@ -47,7 +49,7 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
-
+        
 
 #def login():
     # Here we use a class of some kind to represent and validate our
@@ -82,6 +84,7 @@ def register():
  
 @app.route('/login',methods=['GET','POST'])
 def login():
+    Deploy()
     if request.method == 'GET':
         return render_template('login.html')
     return redirect(url_for('index'))
@@ -105,6 +108,6 @@ def logout():
     return redirect(url_for('index'))
 
 
-@login_manager.user_loader
-def load_user(id):
-    return User.query.get(int(id))
+#@login_manager.user_loader
+#def load_user(id):
+#    return User.query.get(int(id))

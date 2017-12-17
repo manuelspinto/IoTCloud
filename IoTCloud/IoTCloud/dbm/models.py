@@ -1,3 +1,6 @@
+from IoTCloud.dbm.rdb import db
+from datetime import datetime
+
 class User(db.Model):
     __tablename__ = "users"
     id = db.Column('user_id',db.Integer , primary_key=True)
@@ -11,7 +14,7 @@ class User(db.Model):
         self.password = password
         self.email = email
         self.registered_on = datetime.utcnow()
- 
+
     def is_authenticated(self):
         return True
  
