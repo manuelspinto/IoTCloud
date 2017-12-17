@@ -1,5 +1,5 @@
-from IoTCloud.dbm.rdb import db
-from IoTCloud.dbm.models import User
+from .rdb import db
+from .models import User
 
 class Deploy():
     def __init__(self):

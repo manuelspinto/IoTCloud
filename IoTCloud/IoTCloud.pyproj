@@ -28,6 +28,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="IoTCloud\config.py">
+      <SubType>Code</SubType>
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="IoTCloud\dbm\dbdeployer.py" />
     <Compile Include="IoTCloud\dbm\rdb.py">
       <SubType>Code</SubType>

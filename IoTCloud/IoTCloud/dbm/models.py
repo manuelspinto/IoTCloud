@@ -1,4 +1,4 @@
-from IoTCloud.dbm.rdb import db
+from .rdb import db
 from datetime import datetime
 
 class User(db.Model):
