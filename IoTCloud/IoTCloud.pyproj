@@ -42,6 +42,27 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="IoTCloud\dbm\models.py" />
+    <Compile Include="IoTCloud\views\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\views\general.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\views\index.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\views\login.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\views\logout.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\views\register.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoTCloud\views\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="IoTCloud\__init__.py" />
     <Compile Include="IoTCloud\views.py" />
@@ -55,6 +76,7 @@
     <Folder Include="IoTCloud\static\fonts\" />
     <Folder Include="IoTCloud\static\scripts\" />
     <Folder Include="IoTCloud\templates\" />
+    <Folder Include="IoTCloud\views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="IoTCloud\templates\admin.html" />
@@ -84,8 +106,6 @@
     <Content Include="IoTCloud\static\scripts\respond.js" />
     <Content Include="IoTCloud\static\scripts\respond.min.js" />
     <Content Include="IoTCloud\static\scripts\_references.js" />
-    <Content Include="IoTCloud\templates\about.html" />
-    <Content Include="IoTCloud\templates\contact.html" />
     <Content Include="IoTCloud\templates\index.html" />
     <Content Include="IoTCloud\templates\layout.html" />
   </ItemGroup>
