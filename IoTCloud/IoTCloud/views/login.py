@@ -26,4 +26,4 @@ def login():
 	
 	login_user(registered_user, remember = remember_me)
 	flash('Logged in successfully','success')
-	return redirect(request.args.get('next') or url_for('home'))
+	return redirect(request.args.get('next') or url_for('admin'))

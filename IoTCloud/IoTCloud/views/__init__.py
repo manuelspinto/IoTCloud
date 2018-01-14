@@ -3,11 +3,11 @@ from flask_login import login_required, login_user, logout_user , login_manager,
 from flask_wtf import FlaskForm
 import bcrypt
 from datetime import datetime
-
-
 from .. import app, login_manager
 from ..dbm.models import User
-from ..dbm.rdb import db
+
+from ..dbm.rdb import * 
+from ..dbm.deploy import *
 
 from .general import *
 from .index import *
